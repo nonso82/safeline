@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Safeline Market Place Nkwo Nnewi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fcf5e6;--surface:#fff;--ink:#1b2a33;--muted:#5d6b73;--orange:#e8531d;--blue:#0b7fb3;--wa:#1faa59;--line:#eadfc8;--hero:#0b7fb3;--herotext:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14191c;--surface:#1d2529;--ink:#f3ede0;--muted:#a3b0b7;--line:#2b363b;--hero:#0a5f86;color-scheme:dark}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.top{background:var(--orange);color:#fff;font-size:14px;text-align:center;padding:8px 12px}
+header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:16px 0;position:relative}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:24px;text-decoration:none}
+.brand svg{width:42px;height:42px}.brand .bn{display:flex;flex-direction:column;line-height:1}.brand small{font:500 12px Figtree,sans-serif;color:var(--muted);margin-top:3px}
+.sellers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}.seller{display:flex;align-items:center;gap:14px;flex-wrap:wrap;background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:16px}.seller .av{width:48px;height:48px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:700}.seller h3{font-size:18px}.seller p{margin:2px 0 0;color:var(--muted);font-size:14px}.seller .btn{margin-left:auto;padding:10px 18px;font-size:15px}
+nav{display:flex;gap:20px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:999px;padding:14px 24px;font:600 17px Figtree,sans-serif;text-decoration:none;cursor:pointer;color:#fff;background:var(--wa)}
+.btn:focus-visible,.chip:focus-visible,textarea:focus-visible,input:focus-visible,.fab:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px var(--orange)}
+.btn svg,.fab svg{width:22px;height:22px;fill:currentColor}
+.hero{background:var(--hero);color:var(--herotext);border-radius:28px;padding:44px 28px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;margin-top:8px}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:800;letter-spacing:-.02em}
+.hero p{font-size:18px;max-width:46ch;margin:16px 0 0;opacity:.95}
+.compose{background:var(--surface);color:var(--ink);border-radius:20px;padding:20px}
+.compose h2{font-size:20px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{border:1.5px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:8px 14px;font:500 15px Figtree,sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#fff}
+.compose label{display:block;font-size:14px;color:var(--muted);margin:10px 0 4px}
+input,textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;font:400 16px Figtree,sans-serif;background:var(--bg);color:var(--ink)}
+textarea{min-height:92px;resize:vertical}
+.compose .btn{width:100%;justify-content:center;margin-top:14px}
+.note{font-size:13px;color:var(--muted);margin:8px 0 0;text-align:center}
+section{padding:56px 0 0}
+section h2{font-size:clamp(26px,4vw,36px);font-weight:800;margin-bottom:20px}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.cat{display:block;background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px 16px;text-decoration:none;font-weight:600;border-left:6px solid var(--c)}
+.cat span{display:block;font-weight:400;font-size:14px;color:var(--muted);margin-top:2px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;background:var(--surface);border-radius:16px;padding:20px;border:1.5px solid var(--line)}
+.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;margin-bottom:10px}
+.steps h3{font-size:19px;margin-bottom:6px}
+.steps p{margin:0;color:var(--muted)}
+.band{background:var(--orange);color:#fff;border-radius:24px;padding:32px 28px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
+.band h2{margin:0;font-size:28px}
+.band p{margin:6px 0 0;max-width:50ch}
+.band .btn{background:#fff;color:var(--orange)}
+footer{padding:48px 0 110px;color:var(--muted);font-size:14px}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;align-items:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;padding:14px 20px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.hdr-right{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:flex-end}
+.contact{display:flex;flex-direction:column;font-size:13px;color:var(--muted);line-height:1.4;text-align:right}
+.contact a{text-decoration:none}.contact a:hover{color:var(--ink)}
+.avail-wrap{position:static}
+.avail{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:14px;padding:11px 14px;background:linear-gradient(135deg,var(--orange),#ff8a3d);color:#fff;font:700 16px 'Bricolage Grotesque',Figtree,sans-serif;cursor:pointer;box-shadow:0 4px 0 #b53c0e;transition:transform .15s}
+.avail:active{transform:translateY(3px);box-shadow:0 1px 0 #b53c0e}
+.avail:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.avail .dot{width:10px;height:10px;border-radius:50%;background:#7dff9b;animation:pulse 1.8s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(125,255,155,.8)}70%,100%{box-shadow:0 0 0 9px rgba(125,255,155,0)}}
+.avail .car{transition:transform .2s}.avail[aria-expanded='true'] .car{transform:rotate(180deg)}
+.panel{position:absolute;left:50%;transform:translateX(-50%);top:calc(100% + 4px);width:min(92vw,400px);max-height:min(76vh,560px);overflow:auto;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);border-radius:18px;box-shadow:0 18px 40px rgba(0,0,0,.25);z-index:30;padding:16px}
+.panel[hidden]{display:none}
+.panel h3{font-size:20px}
+.panel .sub{font-size:13px;color:var(--muted);margin:2px 0 8px}
+.row{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.thumb{width:56px;height:56px;border-radius:12px;background:var(--bg);display:block}
+.row b{display:block;font-size:15px}
+.row .pr{font-weight:700;color:var(--orange);font-size:17px}
+.row .dl{font-size:13px;color:var(--muted)}
+.row a{display:inline-block;margin-top:6px;font-size:14px;font-weight:600;color:var(--wa);text-decoration:none}
+.pick{font-size:13px;background:var(--bg);border-radius:12px;padding:10px 12px;margin-top:6px}
+.item{display:flex;align-items:center;gap:10px;flex:1 1 220px}
+.item .thumb{width:44px;height:44px}
+.item b{display:block;font-size:14px}.item span{font-size:13px;color:var(--muted)}
+@media (max-width:780px){.hero{grid-template-columns:1fr;padding:30px 20px}nav{display:none}.hdr-right{width:100%;justify-content:space-between}.contact{text-align:left}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="t-choc" viewBox="0 0 48 48"><rect width="48" height="48" rx="10" fill="#f3e3c8"/><rect x="15" y="6" width="18" height="5" rx="2" fill="#3d1a5c"/><rect x="13" y="10" width="22" height="32" rx="4" fill="#5b2a86"/><rect x="13" y="21" width="22" height="9" fill="#f2c94c"/><circle cx="24" cy="25.500" r="3" fill="#5b2a86"/></symbol>
+<symbol id="t-pasta" viewBox="0 0 48 48"><rect width="48" height="48" rx="10" fill="#fdeccf"/><rect x="12" y="7" width="24" height="34" rx="3" fill="#e8531d"/><rect x="16" y="15" width="16" height="15" rx="2" fill="#ffe3b0"/><path d="M19 18v9M24 18v9M29 18v9" stroke="#d9a441" stroke-width="2" stroke-linecap="round"/></symbol>
+<symbol id="t-noodle" viewBox="0 0 48 48"><rect width="48" height="48" rx="10" fill="#e3f1f7"/><path d="M8 23h32a16 14 0 0 1-32 0z" fill="#c62828"/><path d="M13 21c3-8 6 1 9-5s6 2 13-3" stroke="#f2c94c" stroke-width="3" fill="none" stroke-linecap="round"/></symbol>
+</defs></svg>
+<div class="top">Shop. Send. Delivered.</div>
+<div class="wrap">
+<header>
+<a class="brand" href="#top" id="top">
+<svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="10" fill="#fcf5e6"/><path d="M24 10c-6-3-13 0-12 5 1 5 9 5 10 10 1 5-7 7-12 3" fill="none" stroke="#e8531d" stroke-width="6" stroke-linecap="round"/><path d="M24 10c-6-3-13 0-12 5 1 5 9 5 10 10 1 5-7 7-12 3" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="6" stroke-dasharray="1.2 3"/><path d="M26 9v21h8" fill="none" stroke="#0b7fb3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 9v21h8" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="6" stroke-dasharray="1.2 3"/></svg>
+<span class="bn">Safeline<small>Market Place &middot; Nkwo Nnewi</small></span>
+</a>
+<div class="hdr-right">
+<div class="contact"><a href="tel:07086600029">07086600029</a><a href="https://www.safelinelogistics.com" target="_blank" rel="noopener">www.safelinelogistics.com</a><a href="mailto:safeline2012@yahoo.com">safeline2012@yahoo.com</a></div>
+<div class="avail-wrap">
+<button class="avail" id="avail" type="button" aria-expanded="false" aria-controls="panel"><span class="dot" aria-hidden="true"></span>Now Available<svg class="car" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="panel" id="panel" hidden></div>
+</div>
+</div>
+</header>
+
+<main>
+<div class="hero">
+<div>
+<h1>Shop from trusted sellers. Send a message, we handle the rest.</h1>
+<p>Nkwo Nnewi market, delivered to your door. Order products from several sellers at once, or ask us to run an errand. Safeline confirms your price, verifies your payment and delivers to your door.</p>
+</div>
+<div class="compose">
+<h2>What do you need today?</h2>
+<div class="chips" role="group" aria-label="Choose a request type">
+<button class="chip" type="button" aria-pressed="true" data-msg="Hello Safeline, I would like to place an order. I want: ">Order products</button>
+<button class="chip" type="button" aria-pressed="false" data-msg="Hello Safeline, I need an errand done. Pickup from: ... Deliver to: ... Details: ">Request an errand</button>
+<button class="chip" type="button" aria-pressed="false" data-msg="Hello Safeline, please quote me a delivery fee. From: ... To: ... Item: ">Get a delivery quote</button>
+</div>
+<label for="name">Your name</label>
+<input id="name" type="text" autocomplete="name" placeholder="e.g. Amaka">
+<label for="msg">Your message</label>
+<textarea id="msg"></textarea>
+<a class="btn" id="send" href="#" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.400 0 .6l-.4.600-.4.400c-.1.200-.3.400-.1.700.2.300.8 1.300 1.800 2.100 1.200 1 2.200 1.400 2.500 1.500.3.200.5.100.7-.1l.8-1c.2-.3.400-.2.700-.1l1.900.9c.3.100.5.200.6.300.1.200.1.800-.1 1.400z"/></svg>
+Send on WhatsApp</a>
+<p class="note"> WhatsApp Interaction.</p>
+</div>
+</div>
+
+<section id="shop">
+<h2>Shop by category</h2>
+<div class="cats">
+<a class="cat" style="--c:#e8531d" href="#top" data-cat="Groceries">Groceries<span>Fresh and packaged</span></a>
+<a class="cat" style="--c:#0b7fb3" href="#top" data-cat="Fashion">Fashion<span>Clothes, shoes, bags</span></a>
+<a class="cat" style="--c:#e8531d" href="#top" data-cat="Phones and gadgets">Phones &amp; gadgets<span>Devices and accessories</span></a>
+<a class="cat" style="--c:#0b7fb3" href="#top" data-cat="Home and kitchen">Home &amp; kitchen<span>Appliances and decor</span></a>
+<a class="cat" style="--c:#e8531d" href="#top" data-cat="Beauty and care">Beauty &amp; care<span>Skin, hair, wellness</span></a>
+<a class="cat" style="--c:#0b7fb3" href="#top" data-cat="Food and drinks">Food &amp; drinks<span>Ready meals, beverages</span></a>
+</div>
+</section>
+
+<section id="sellers">
+<h2>Grocery sellers</h2>
+<div class="sellers" id="sellerList">
+
+</div>
+</section>
+
+<section id="how">
+<h2>How ordering works</h2>
+<ol class="steps">
+<li><h3>Tell us what you need</h3><p>Send your order or errand on WhatsApp. Items from different sellers can go in one order.</p></li>
+<li><h3>Get your quote</h3><p>We confirm availability and send one price with the delivery fee included.</p></li>
+<li><h3>Pay by bank transfer</h3><p>Send your proof of payment. We verify it before any seller is told to prepare.</p></li>
+<li><h3>We deliver</h3><p>A Safeline rider collects from each seller and brings everything to you.</p></li>
+</ol>
+</section>
+
+<section id="sell">
+<div class="band">
+<div><h2>Want to sell on Safeline?</h2><p>Apply as a seller. Every product is reviewed by Safeline before it goes live.</p></div>
+<a class="btn" id="sellbtn" href="#" target="_blank" rel="noopener">Apply on WhatsApp</a>
+</div>
+</section>
+</main>
+
+<footer>Safeline Market Place, Nkwo Nnewi &middot; Orders, errands and delivery &middot; <a href="tel:07086600029">07086600029</a> &middot; <a href="tel:08022721133">08022721133</a></footer>
+</div>
+
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="Chat with Safeline on WhatsApp">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.400 0 .6l-.4.600-.4.400c-.1.200-.3.400-.1.700.2.300.8 1.300 1.800 2.100 1.200 1 2.200 1.400 2.500 1.500.3.200.5.100.7-.1l.8-1c.2-.3.400-.2.700-.1l1.900.9c.3.100.5.200.6.300.1.200.1.800-.1 1.400z"/></svg>
+Chat with us</a>
+
+<script>
+(function(){
+var NUM="2347086600029";
+function link(t){return "https://wa.me/"+NUM+"?text="+encodeURIComponent(t);}
+var msg=document.getElementById("msg"),name=document.getElementById("name"),send=document.getElementById("send");
+var chips=document.querySelectorAll(".chip");
+function build(){var t=msg.value.trim();var n=name.value.trim();if(n){t+="\n\nName: "+n;}send.href=link(t||"Hello Safeline, I need help.");}
+function pick(c){chips.forEach(function(x){x.setAttribute("aria-pressed",x===c?"true":"false");});msg.value=c.getAttribute("data-msg");build();}
+chips.forEach(function(c){c.addEventListener("click",function(){pick(c);msg.focus();});});
+msg.addEventListener("input",build);name.addEventListener("input",build);
+document.querySelectorAll(".cat").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();pick(chips[0]);msg.value="Hello Safeline, I would like to order from "+a.getAttribute("data-cat")+". I want: ";build();document.querySelector(".compose").scrollIntoView({behavior:"smooth",block:"center"});msg.focus();});});
+document.getElementById("fab").href=link("Hello Safeline, I need help.");
+var sellers=[];
+/* To add a verified seller, add an entry like: {name:"Seller Name",verified:true,item:{n:"Product",u:"Carton",p:"0,000",t:"t-pasta"}} . Only entries with verified:true are shown. */
+var sl=document.getElementById("sellerList");
+var vs=sellers.filter(function(s){return s.verified;});
+if(!vs.length){sl.innerHTML='<p style="color:var(--muted)">Verified grocery sellers will appear here.</p>';}
+vs.forEach(function(s){var ini=s.name.split(" ").map(function(w){return w[0];}).join("").slice(0,2);
+var it=s.item?'<div class="item"><svg class="thumb" viewBox="0 0 48 48" aria-hidden="true"><use href="#'+s.item.t+'"/></svg><div><b>'+s.item.n+'</b><span>'+s.item.u+' &middot; ₦'+s.item.p+'</span></div></div>':'';
+sl.insertAdjacentHTML("beforeend",'<div class="seller"><div class="av" aria-hidden="true">'+ini+'</div><div><h3>'+s.name+'</h3><p>✓ Verified by Safeline</p></div>'+it+'<a class="btn" href="'+link("Hello Safeline, I would like to order groceries from "+s.name+". I want: ")+'" target="_blank" rel="noopener">Order groceries</a></div>');});
+document.getElementById("sellbtn").href=link("Hello Safeline, I would like to sell on Safeline Market Place. Business name: ... What I sell: ...");
+var items=[{n:"Cadbury Hot Chocolate",u:"Hanging/carton",p:"33,500",t:"t-choc"},{n:"Golden Penny Spaghetti",u:"Carton",p:"9,800",t:"t-pasta"},{n:"Indomie Chicken Noodles",u:"Carton",p:"8,500",t:"t-noodle"}];
+var panel=document.getElementById("panel"),ab=document.getElementById("avail");
+var h='<h3>Now available</h3><p class="sub">Sample items. Delivery within Nnewi is a flat ₦1,000.</p>';
+items.forEach(function(i){var m="Hello Safeline, I would like to order: "+i.n+" ("+i.u+") ₦"+i.p+(i.s?" from "+i.s:"")+". Delivery in Nnewi: flat ₦1,000.";
+h+='<div class="row"><svg class="thumb" viewBox="0 0 48 48" aria-hidden="true"><use href="#'+i.t+'"/></svg><div><b>'+i.n+'</b><span class="dl">'+i.u+'</span><div class="pr">₦'+i.p+'</div><div class="dl">Delivery fee: Flat (₦1,000)</div><a href="'+link(m)+'" target="_blank" rel="noopener">Order on WhatsApp</a></div></div>';});
+h+='<div class="pick"><b>Free pickup</b> @ Safeline Store, along Nkwo to Nkwo Road, Akaboukwu, Nnewi, Anambra State</div>';
+panel.innerHTML=h;
+function closeP(){panel.hidden=true;ab.setAttribute("aria-expanded","false");}
+ab.addEventListener("click",function(){var o=panel.hidden;panel.hidden=!o;ab.setAttribute("aria-expanded",o?"true":"false");});
+document.addEventListener("click",function(e){if(!panel.hidden&&!e.target.closest(".avail-wrap")){closeP();}});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&!panel.hidden){closeP();ab.focus();}});
+pick(chips[0]);
+})();
+</script>
+</body>
+</html>
